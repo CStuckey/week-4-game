@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Crystal Collector</title>
+
+    <!-- Boostrap CDN Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
+
+  </head>
+
+  <body>
+
+  <div class="wrap">
+    <div class="container">
+
+      <!-- Heading Block -->
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body" id="heading">
+            <h1>Crystal Collector!</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Directions for game -->
+      <div id="content">
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-body dirctions">
+              <p>You will be given a random number at the start of the game.</p>
+              <p>There are four crystals below. By Clicking on a crystal you will add a specific amount of points to your total score.</p>
+              <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+              <p>The value of each crystal is hidden from you until you click on it.</p>
+              <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Random number generated block-->
+      <div class="row equal">
+        <div class="col-sm-5">
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <h2 id="random-number"></h2>
+            </div>
+          </div>
+        </div>
+
+          <!-- Win / Loss Content -->
+        <div class="col-sm-5">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p id="wins">Wins: <span id="win-tally"></span></p>
+              <p id="losses">Losses: <span id="loss-tally"></span></p>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+      <!-- Four gem blocks -->
+      <div class="row buttonRow">
+        
+        <!-- <div class="col-sm-3"> -->
+          <button type="button" class="btn btn-default btn-lg gem-red">
+              <div id="gem-red">
+                <img src="assets/images/red.png" class="img-responsive center-block">
+              </div>    
+          </button>
+        <!-- </div>  -->
+
+        <!-- <div class="col-sm-3"> -->
+          <button type="button" class="btn btn-default btn-lg gem-blue">
+              <div id="gem-blue">
+                <img src="assets/images/blue.png" class="img-responsive center-block">
+              </div>    
+          </button>
+        <!-- </div> -->   
+
+        <!-- <div class="col-sm-3"> -->
+          <button type="button" class="btn btn-default btn-lg gem-yellow">
+              <div id="gem-yellow">
+                <img src="assets/images/yellow.png" class="img-responsive center-block">
+              </div>    
+          </button>
+        <!-- </div> -->    
+
+        <!-- <div class="col-sm-3"> -->
+          <button type="button" class="btn btn-default btn-lg gem-green">
+              <div id="gem-green">
+                <img src="assets/images/green.png" class="img-responsive center-block">
+              </div>    
+          </button>
+        </div>
+      <!-- </div> -->
+
+      <!-- Your total score is block -->
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>Your total score is: <span id="total-score"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tallied number from gems -->
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2 id="score-counter"></h2>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>    
+
+    <!-- Start of footer -->
+    <!-- <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Chris Stuckey Copyright GWU Coding Bootcamp 2017
+      </p>
+    </footer> -->
+    <!-- End of footer -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+    
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
